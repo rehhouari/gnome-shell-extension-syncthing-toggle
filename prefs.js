@@ -28,12 +28,16 @@ export default class SyncthingToggleExtensionPreferences extends ExtensionPrefer
 		//#region port
 
 		const portRow = new Adw.ActionRow({
-			title: "Set Syncthing port",
+			title: "Syncthing port",
+			subtitle: "Set the port Syncthing runs on.",
 		})
 
 		let port = this._window._settings.get_int('port')
 
 		const portInput = new Gtk.SpinButton({
+			valign: Gtk.Align.CENTER,
+			orientation: Gtk.Orientation.HORIZONTAL,
+			numeric: true,
 			adjustment: new Gtk.Adjustment({
 				lower: 0,
 				upper: 65535,
