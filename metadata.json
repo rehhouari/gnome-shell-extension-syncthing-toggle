@@ -7,7 +7,7 @@
 	],
 	"settings-schema": "org.gnome.shell.extensions.syncthing-toggle",
 	"url": "https://github.com/rehhouari/gnome-shell-extension-syncthing-toggle",
-	"version": 1,
+	"version": 2,
 	"donations": {
 		"kofi": "rehhouari"
 	}
