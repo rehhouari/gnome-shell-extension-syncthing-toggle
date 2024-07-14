@@ -26,7 +26,7 @@ Feel free to open issues for bug fixes or feature requests, and pull requests to
 
 ## Credits
 
-This extension uses code from [Cloudflare WARP Toggle Extension](https://github.com/khaled-0/gnome-cloudflare-warp-toggle) by @khaled-
+This extension uses code from [Cloudflare WARP Toggle Extension](https://github.com/khaled-0/gnome-cloudflare-warp-toggle) by [@khaled-0](https://github.com/khaled-0)
 
 
 ## License
