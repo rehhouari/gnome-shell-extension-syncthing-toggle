@@ -3,7 +3,8 @@ A GNOME extension to toggle the Syncthing service from the quick settings menu.
 
 > Requires the `syncthing` systemd service to be installed.
 
-![image](https://github.com/user-attachments/assets/0bf6d551-35ec-44ae-8f63-7d5675eb57f9)
+
+[<img src="https://raw.githubusercontent.com/andyholmes/gnome-shell-extensions-badge/master/get-it-on-ego.svg?sanitize=true" alt="Get it on GNOME Extensions" height="100" align="middle">][ego]
 
 ## Features
 
@@ -17,7 +18,7 @@ A GNOME extension to toggle the Syncthing service from the quick settings menu.
 
 ## Installation
 
-Download the [latest release](https://github.com/rehhouari/gnome-shell-extension-syncthing-toggle/releases)
+Get it from [GNOME Extensions](https://extensions.gnome.org/extension/7180/syncthing-toggle/) or download the [latest release](https://github.com/rehhouari/gnome-shell-extension-syncthing-toggle/releases)
 
 ## Contributing:
 
@@ -32,3 +33,6 @@ This extension uses code from [Cloudflare WARP Toggle Extension](https://github.
 ## License
 
 Copyright (c) 2024 Rafik El Hadi Houari.
+
+
+[ego]: https://extensions.gnome.org/extension/7180/syncthing-toggle
