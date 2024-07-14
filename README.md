@@ -1,7 +1,7 @@
 # Syncthing Toggle
 A GNOME extension to toggle the Syncthing service from the quick settings menu.
 
-> Requires `syncthing` package and it's systemd service to be installed.
+> Requires the `syncthing` systemd service to be installed.
 
 ![image](https://github.com/user-attachments/assets/0bf6d551-35ec-44ae-8f63-7d5675eb57f9)
 
