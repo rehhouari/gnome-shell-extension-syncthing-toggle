@@ -22,7 +22,6 @@ import { Extension, gettext as _ } from 'resource:///org/gnome/shell/extensions/
 import { ServiceIndicator } from './toggle.js'
 
 
-
 export default class SyncthingToggleExtension extends Extension {
 	enable() {
 		this._indicator = new ServiceIndicator(this)
