@@ -9,9 +9,9 @@ export default class SyncthingToggleExtensionPreferences extends ExtensionPrefer
 		window._settings = this.getSettings('org.gnome.shell.extensions.syncthing-toggle')
 		this._window = window
 
-		const iconTheme = Gtk.IconTheme.get_for_display(window.get_display());
-		const iconsDirectory = this.dir.get_child('icons').get_path();
-		iconTheme.add_search_path(iconsDirectory);
+		const iconTheme = Gtk.IconTheme.get_for_display(window.get_display())
+		const iconsDirectory = this.dir.get_child('icons').get_path()
+		iconTheme.add_search_path(iconsDirectory)
 
 		this._general()
 	}

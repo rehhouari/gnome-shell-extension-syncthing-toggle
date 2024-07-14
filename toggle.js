@@ -6,6 +6,7 @@ import { spawnCommandLine } from "resource:///org/gnome/shell/misc/util.js"
 import * as Main from 'resource:///org/gnome/shell/ui/main.js'
 
 
+
 const statusPattern =
 	/(\(running\))/
 
@@ -30,6 +31,31 @@ const ServiceToggle = GObject.registerClass(
 
 			this._settings = extensionObject.getSettings()
 
+
+			// TODO: Add devices?
+			// this._devicesSection = new PopupMenu.PopupMenuSection()
+			// let devices = [
+			// 	{ name: "Samsung Galaxy", completion: 100, id: "aa" },
+			// 	{ name: "Microsoft Surface", completion: 90, id: "bb" }
+			// ]
+			// for (const device of devices) {
+			// 	let title = new PopupMenu.PopupSeparatorMenuItem(device.name)
+			// 	title.label.clutter_text.ellipsize = 0
+			// 	title.label.style_class = 'device-name-label'
+
+			// 	let percentageLabel = new St.Label({
+			// 		text: device.completion + '%',
+			// 		style_class: 'percentage-label'
+			// 	})
+
+			// 	let percentageBin = new St.Bin({
+			// 		child: percentageLabel
+			// 	})
+
+			// 	title.actor.add_child(percentageBin)
+			// 	this._devicesSection.actor.add_child(title)
+			// }
+
 			// Add a section of items to the menu
 			this._itemsSection = new PopupMenu.PopupMenuSection()
 			this._itemsSection.addAction(_('Open Web GUI'),
@@ -42,6 +68,8 @@ const ServiceToggle = GObject.registerClass(
 						logError(e, 'Failed to open URL')
 					}
 				})
+
+			// this.menu.addMenuItem(this._devicesSection)
 			this.menu.addMenuItem(this._itemsSection)
 
 			// Add an entry-point for more settings
@@ -80,12 +108,6 @@ export var ServiceIndicator = GObject.registerClass(
 			})
 		}
 
-		updateStatus(isActive) {
-			this._indicator.visible = isActive
-			let optionalStatus = isActive ? "Running" : "Stopped"
-			this._toggle.set({ checked: isActive, subtitle: optionalStatus })
-		}
-
 		async checkStatus() {
 			try {
 				const proc = Gio.Subprocess.new(
@@ -109,4 +131,11 @@ export var ServiceIndicator = GObject.registerClass(
 				return SyncthingStatus.Error
 			}
 		}
+
+		updateStatus(isActive) {
+			this._indicator.visible = isActive
+			let optionalStatus = isActive ? "Running" : "Stopped"
+			this._toggle.set({ checked: isActive, subtitle: optionalStatus })
+		}
+
 	})
