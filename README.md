@@ -40,7 +40,8 @@ This extension uses code from [Cloudflare WARP Toggle Extension](https://github.
 
 ## License
 
-Copyright (c) 2024 Rafik El Hadi Houari.
+Copyright (c) 2024 Rafik El Hadi Houari [GPLv3](LICENSE).
 
+The Syncthing logo is under the [MPLv2](https://www.mozilla.org/en-US/MPL/2.0/), copyright The Syncthing Authors.
 
 [ego]: https://extensions.gnome.org/extension/7180/syncthing-toggle
