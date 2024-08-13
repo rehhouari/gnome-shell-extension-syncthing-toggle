@@ -17,18 +17,16 @@ const SyncthingStatus = Object.freeze({
 
 const ServiceToggle = GObject.registerClass(
 	class ServiceToggle extends QuickMenuToggle {
-		constructor(extensionObject) {
+		constructor(extensionObject, syncthingIcon) {
 			super({
 				title: _('Syncthing'),
-				gicon: Gio.icon_new_for_string(
-					extensionObject.path + "/icons/syncthing-symbolic.svg"
-				),
+				gicon: syncthingIcon,
 				toggleMode: true,
 				subtitle: 'Loading'
 			})
 			// Add a header with an icon, title and optional subtitle. This is
 			// recommended for consistency with other quick settings menus.
-			this.menu.setHeader('syncthing-symbolic', _('Syncthing'))
+			this.menu.setHeader(syncthingIcon, _('Syncthing'))
 
 			this._settings = extensionObject.getSettings()
 
@@ -64,12 +62,14 @@ export var ServiceIndicator = GObject.registerClass(
 		constructor(extensionObject) {
 			super()
 
-			this._indicator = this._addIndicator()
-			this._indicator.gicon = Gio.icon_new_for_string(
+			const syncthingIcon = Gio.icon_new_for_string(
 				extensionObject.path + "/icons/syncthing-symbolic.svg"
 			)
+
+			this._indicator = this._addIndicator()
+			this._indicator.gicon = syncthingIcon
 			this._settings = extensionObject.getSettings()
-			this._toggle = new ServiceToggle(extensionObject)
+			this._toggle = new ServiceToggle(extensionObject, syncthingIcon)
 			this.quickSettingsItems.push(this._toggle)
 
 			this._toggle.connect("clicked", async () => {

@@ -95,7 +95,7 @@ export default class SyncthingToggleExtensionPreferences extends ExtensionPrefer
 
 	_about() {
 		const about_window = new Adw.AboutWindow({ transient_for: this._window, modal: true })
-		about_window.set_application_icon('syncthing-symbolic')
+		about_window.set_application_icon('syncthing-logo-only')
 		about_window.set_application_name(_('Syncthing Toggle'))
 		about_window.set_version(`${this.metadata.version}.0`)
 		about_window.set_developer_name('rehhouari (rehhouari@gmail.com)')
