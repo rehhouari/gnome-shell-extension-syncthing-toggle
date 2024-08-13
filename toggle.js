@@ -20,7 +20,9 @@ const ServiceToggle = GObject.registerClass(
 		constructor(extensionObject) {
 			super({
 				title: _('Syncthing'),
-				iconName: 'syncthing-symbolic',
+				gicon: Gio.icon_new_for_string(
+					extensionObject.path + "/icons/syncthing-symbolic.svg"
+				),
 				toggleMode: true,
 				subtitle: 'Loading'
 			})
@@ -63,7 +65,9 @@ export var ServiceIndicator = GObject.registerClass(
 			super()
 
 			this._indicator = this._addIndicator()
-			this._indicator.iconName = 'syncthing-symbolic'
+			this._indicator.gicon = Gio.icon_new_for_string(
+				extensionObject.path + "/icons/syncthing-symbolic.svg"
+			)
 			this._settings = extensionObject.getSettings()
 			this._toggle = new ServiceToggle(extensionObject)
 			this.quickSettingsItems.push(this._toggle)
