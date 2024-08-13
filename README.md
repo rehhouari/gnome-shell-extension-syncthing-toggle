@@ -26,6 +26,12 @@ Get it from [GNOME Extensions](https://extensions.gnome.org/extension/7180/synct
 
 Feel free to open issues for bug fixes or feature requests, and pull requests to close them.
 
+Pack extension:
+
+```sh
+gnome-extensions pack -f --extra-source=icons/ --extra-source=toggle.js syncthing-toggle@rehhouari.github.com
+```
+
 
 ## Credits
 
