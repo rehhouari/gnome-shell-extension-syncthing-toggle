@@ -63,7 +63,7 @@ export default class SyncthingToggleExtensionPreferences extends ExtensionPrefer
 
 		const startStopOnlySwitch = new Adw.SwitchRow({
 			title: _('Start/Stop only'),
-			subtitle: _('Whether or not to enable or disable when toggling.'),
+			subtitle: _('Whether or not to only start/stop or also enable/disable the Syncthing service when toggling.'),
 		})
 
 		group.add(startStopOnlySwitch)
