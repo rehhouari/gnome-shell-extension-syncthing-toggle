@@ -1,14 +1,12 @@
 {
-	"name": "Syncthing Toggle",
-	"description": "A GNOME quick setting for turning on and off the Syncthing service and opening the Web GUI",
-	"uuid": "syncthing-toggle@rehhouari.github.com",
-	"shell-version": [
-		"47"
-	],
-	"settings-schema": "org.gnome.shell.extensions.syncthing-toggle",
-	"url": "https://github.com/rehhouari/gnome-shell-extension-syncthing-toggle",
-	"version": 4,
-	"donations": {
-		"kofi": "rehhouari"
-	}
+  "name": "Syncthing Toggle",
+  "description": "A GNOME quick setting for turning on and off the Syncthing service and opening the Web GUI",
+  "uuid": "syncthing-toggle@rehhouari.github.com",
+  "shell-version": ["48"],
+  "settings-schema": "org.gnome.shell.extensions.syncthing-toggle",
+  "url": "https://github.com/rehhouari/gnome-shell-extension-syncthing-toggle",
+  "version": 4,
+  "donations": {
+    "kofi": "rehhouari"
+  }
 }
