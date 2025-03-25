@@ -12,10 +12,10 @@ A GNOME extension to toggle the Syncthing service from the quick settings menu.
 
 - Start or stop Syncthing service from the quick settings menu.
 - Option to open the web GUI in the default browser.
-- Can customize the port if you changed it in the configs, and choose whether
+- Can customize the service name, the port, and choose whether
   or not to also enable / disable the service when toggling.
 
-![image](https://github.com/user-attachments/assets/cef85bae-6347-42e3-9e7b-62564c2c094d)
+![Screenshot](https://github.com/user-attachments/assets/66067c8a-3dad-4c1e-a6e7-34fa5738d026)
 
 ## Installation
 
