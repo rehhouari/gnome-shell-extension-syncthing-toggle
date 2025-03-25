@@ -7,6 +7,11 @@
 			<summary>Whether or not the toggle should only start/stop or also enable/disable</summary>
 			<description>Set to true to only start or stop the service, not enable and disable.</description>
 		</key>
+    <key name="service-name" type="s">
+      <default>'syncthing.service'</default>
+      <summary>Syncthing service name</summary>
+      <description>The name of the Syncthing systemd service to control.</description>
+    </key>
 		<key name="port" type="i">
 			<range min="1" max="9999" />
 			<default>8384</default>
