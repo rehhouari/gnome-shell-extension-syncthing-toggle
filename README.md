@@ -25,6 +25,12 @@ Get it from [GNOME Extensions](https://extensions.gnome.org/extension/7180/synct
 
 Feel free to open issues for bug fixes or feature requests, and pull requests to close them.
 
+Compile schema after changing it:
+
+```sh
+glib-compile-schemas schemas/
+```
+
 Pack extension:
 
 ```sh
