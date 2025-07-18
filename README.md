@@ -6,7 +6,8 @@ A GNOME extension to toggle the Syncthing service from the quick settings menu.
 
 [<img src="https://raw.githubusercontent.com/andyholmes/gnome-shell-extensions-badge/master/get-it-on-ego.svg?sanitize=true" alt="Get it on GNOME Extensions" height="80" align="middle">][ego]
 
-![image](https://github.com/user-attachments/assets/0bf6d551-35ec-44ae-8f63-7d5675eb57f9)
+<img width="415" height="277" alt="Screenshot of syncthing toggle in GNOME quick settings menu" src="https://github.com/user-attachments/assets/1d98f997-eb90-4807-b8ff-3469676763f8" />
+
 
 ## Features
 
@@ -14,8 +15,10 @@ A GNOME extension to toggle the Syncthing service from the quick settings menu.
 - Option to open the web GUI in the default browser.
 - Can customize the service name, the port, and choose whether
   or not to also enable / disable the service when toggling.
+- Custom icon name setting
 
-![Screenshot](https://github.com/user-attachments/assets/66067c8a-3dad-4c1e-a6e7-34fa5738d026)
+<img width="755" height="521" alt="Screenshot of syncthing toggle extension settings" src="https://github.com/user-attachments/assets/7070314f-7352-49ce-b6bb-c42dd13705c9" />
+
 
 ## Installation
 
