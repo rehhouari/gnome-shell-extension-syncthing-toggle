@@ -8,7 +8,6 @@ A GNOME extension to toggle the Syncthing service from the quick settings menu.
 
 <img width="415" height="277" alt="Screenshot of syncthing toggle in GNOME quick settings menu" src="https://github.com/user-attachments/assets/1d98f997-eb90-4807-b8ff-3469676763f8" />
 
-
 ## Features
 
 - Start or stop Syncthing service from the quick settings menu.
@@ -18,7 +17,6 @@ A GNOME extension to toggle the Syncthing service from the quick settings menu.
 - Custom icon name setting
 
 <img width="755" height="521" alt="Screenshot of syncthing toggle extension settings" src="https://github.com/user-attachments/assets/7070314f-7352-49ce-b6bb-c42dd13705c9" />
-
 
 ## Installation
 
@@ -47,7 +45,7 @@ This extension uses code from [Cloudflare WARP Toggle Extension](https://github.
 
 ## License
 
-Copyright (c) 2024 Rafik El Hadi Houari [GPLv3](LICENSE).
+Copyright (c) 2025 Rafik El Hadi Houari [GPLv3](LICENSE).
 
 The Syncthing logo is under the [MPLv2](https://www.mozilla.org/en-US/MPL/2.0/), copyright The Syncthing Authors.
 
